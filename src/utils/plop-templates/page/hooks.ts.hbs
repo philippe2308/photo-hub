@@ -1,0 +1,19 @@
+import { useEffect, useState } from "react";
+
+interface {{pascalCase name}}PageData {
+  title: string;
+}
+
+export const use{{pascalCase name}} = () => {
+  const [{{camelCase name}}PageData, set{{pascalCase name}}PageData] = useState<{{pascalCase name}}PageData>(
+    { title: "" }
+  );
+
+  useEffect(() => {
+    set{{pascalCase name}}PageData({ title: "{{pascalCase name}} Page" });
+  }, []);
+
+  return {
+    {{camelCase name}}PageData,
+  };
+};

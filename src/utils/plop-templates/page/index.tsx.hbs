@@ -1,0 +1,11 @@
+import { use{{pascalCase name}} } from "./hooks";
+
+const {{pascalCase name}} = () => {
+  const {
+    {{camelCase name}}PageData: { title },
+  } = use{{pascalCase name}}();
+
+  return <div>{title}</div>;
+};
+
+export default {{pascalCase name}};
